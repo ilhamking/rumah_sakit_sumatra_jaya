@@ -1,0 +1,222 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.container-navbar {
+    background-color: rgb(91, 187, 209);
+    width: 100%;
+    height: 10vh;
+}
+
+.ul-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    flex-wrap: wrap;
+}
+
+.li-navbar {
+    font-size: 15px;
+    padding: 10px;
+    list-style-type: none;
+    color: white;
+    margin: 5px;
+}
+
+.li-emergency {
+    margin-right: auto;
+    color: white;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.a-navbar:hover {
+    text-decoration: underline;
+    transition: 0.1s ease-in-out;
+    transition-delay: 0.2s;
+    border-radius: 1px;
+}
+
+.a-navbar {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+/* Content 1 - Bagian Info Dokter dan jadwal */
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white(91, 187, 209);
+    padding: 20px;
+    font-size: x-large;
+    background: transparent;
+}
+
+.siti {
+    background-image: url('asset/foto/siti.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+    color: aqua;
+}
+
+.jadwalsiti {
+    font-size: x-large;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cek{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+}
+.cek:hover{
+    text-decoration: underline;
+    transition: 0.1s ease-in-out;
+    transition-delay: 0.2s;
+    border-radius: 1px;
+    color: white;
+}
+.Doktersiti {
+    color: white(91, 187, 209);
+    padding: 24px;
+ box-shadow: 2px 2px 2px 2px  rgb(91, 187, 209);
+}
+
+.button {
+    background-color: rgb(91, 187, 209);
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.button:hover {
+    transition: 0.1s ease-in-out;
+    transition-delay: 0.2s;
+    border-radius: 1px;
+    color: black;
+}
+
+/* Content 1 */
+.container-content {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    text-align: center;
+}
+
+.content {
+    padding: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.a-content {
+    color: rgb(86, 89, 89);
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    list-style-type: none;
+    display: table-column;
+    margin: 5px;
+   
+}
+
+.img-content {
+    flex-wrap: wrap;
+    height: auto;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.a-content:hover {
+    transition: 0.1s ease-in-out;
+    transition-delay: 0.2s;
+    border-radius: 1px;
+    color: black;
+}
+
+.infodokter {
+    transition: 0.1s ease-in-out;
+    transition-delay: 0.2s;
+    border-radius: 1px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* FOOTER CONTENT */
+.container-footer {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(38, 36, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h4-footer {
+    color: white;
+    font-size: 10px;
+}
+
+/* SUPAYA WAKTU DIMOBILE LEBIH RAPI */
+@media screen and (max-width: 768px) {
+    .container-navbar {
+        height: auto;
+        
+    }
+    .ul-navbar {
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .li-navbar, .li-emergency {
+        font-size: 12px;
+        
+    }
+    .tentang {
+        font-size: large;
+        padding: 10px;
+    }
+    .jadwalsiti {
+        font-size: large;
+        
+    }
+    .content {
+        padding: 0;
+        
+    }
+    .img-content {
+        height: auto;
+        margin: 10px;
+        
+        width: 100%;
+    }
+}
